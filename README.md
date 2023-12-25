@@ -9,4 +9,4 @@
 
 Веса модели src/model/130EPH_best.pt
 
-[Датасет для обучения.](https://www.kaggle.com/datasets/romanovka/dataset-disc-insulators)
+[Датасет который был использован.](https://www.kaggle.com/datasets/romanovka/dataset-disc-insulators)

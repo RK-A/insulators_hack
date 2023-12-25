@@ -27,7 +27,7 @@ if __name__=='__main__':
     for filename in os.listdir(folder):
         img = cv2.imread(os.path.join(folder,filename))
         if img is not None:
-            boxes, conf = findBoxes(img, model, confidence=0.61, resize=640, f_resize=True)
+            boxes, conf = findBoxes(img, model, confidence=0.51, resize=640, f_resize=True)
             img = ImageWithBoxes(img, boxes)
             cv2.imwrite(os.path.join(predict_folder,f'pred_{filename}'), img)
             submiss = pd.concat([submiss,getPd('.'.join(filename.split('.')[:-1]),boxes, conf)],ignore_index=True)
